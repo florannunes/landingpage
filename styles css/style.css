@@ -30,13 +30,24 @@ span{
 
 
 
-.cabecalhonav {
-display: flex;
-gap: 0px
+.cabecalho {
+    padding: 2% 0 0 16%;
+    gap: 80px
+   
+}
+
+.cabecalhomenu {
+    font-family: 'Monserrat Alternates', sans-serif;
+    font-size: 24px;
+    font-weight: 600;
+    color:#22D4FD;
+    text-decoration: none;
+
 }
 
 
-.home {
+
+/* .home {
     font-family: 'Monserrat Alternates', sans-serif;
     font: size 24px;
     font-weight: 600px;
@@ -52,7 +63,7 @@ gap: 0px
     color: #22D4FD;
     padding: 2% 2% 0 ;
     text-decoration: none;
-}
+} */
 
 .botaocor {
     

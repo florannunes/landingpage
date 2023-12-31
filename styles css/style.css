@@ -1,5 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat+Alternates:wght@200;400&display=swap');
 
+
+:root {
+    --font-size-padrao: 1.5rem;
+}
+
+
+
 * {
     margin: 0;
     padding: 0;
@@ -11,14 +18,15 @@ body {
     
     box-sizing: border-box;
     background-color: #000000;
-    background: linear-gradient(160deg, #000000,#030331 );
+    background: url("/assets/code-removebg-preview.png"), linear-gradient(160deg, #000000,#080857 );
     color: #F6F6F6;
-    overflow: hidden;
     height: 100%;
- 
-  
+    background-repeat: no-repeat;
+    background-position: right;
     
+   
 }
+
 
 h1{
     font-weight: bold;
@@ -43,6 +51,7 @@ span{
     font-weight: 600;
     color:#22D4FD;
     text-decoration: none;
+    margin: 0 5px;
 
 }
 

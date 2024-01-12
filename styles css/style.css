@@ -1,8 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat+Alternates:wght@200;400&display=swap');
 
-
 :root {
-    --font-size-padrao: 1.5rem;
+    --cor-principal:  #000000;
+    --cor-secundaria: #f6f6f6;
+    --cor-terc: #22D4FD;
+   
+
+    --fonte-primaria: 'Montserrat Alternates', sans-serif;
+    --fonte-secundaria: 'Krona One', sans-serif;
+
 }
 
 
@@ -14,12 +20,18 @@
    
 }
 
+
+html {
+    font-size: 16px;
+}
+
+
 body {
     
     box-sizing: border-box;
     background-color: #000000;
-    background: url("/assets/code-removebg-preview.png"), linear-gradient(160deg, #000000,#080857 );
-    color: #F6F6F6;
+    background: url("/assets/code-removebg-preview.png"), linear-gradient(160deg, #000000,#0a0a49 );
+    color: var(--cor-secundaria);
     height: 100%;
     background-repeat: no-repeat;
     background-position: right;
@@ -35,30 +47,42 @@ h1{
 }
 
 span{
-    color: #22D4FD;}
+    color: var(--cor-terc); 
+}
 
 
 
 .cabecalho {
     padding: 2% 0 0 16%;
-    gap: 80px
+    gap: 5em
    
 }
 
+
+.cabecalhonav {
+
+    color: var(--cor-terc);
+}
+
 .cabecalhomenu {
-    font-family: 'Monserrat Alternates', sans-serif;
-    font-size: 24px;
+    font-family: var (--fonte-primaria);
+    font-size: 2.25rem;
     font-weight: 600;
-    color:#22D4FD;
+   
+    color: var (var(--cor-terc));
     text-decoration: none;
-    margin: 0 5px;
+    margin: 0 0.31rem;
 
 }
 
 .titulodestaque {
-    color: #22D4FD;
+    color: var(--cor-terc);
 }
 
+
+
+
+/* main */
 
 .apresentacao {
       
@@ -68,56 +92,39 @@ span{
     justify-content:space-between; 
     padding: 6%;
     height: 50%;
-    gap: 55px;
+    gap: 3.5em;
 }
 
 .apresentacao__cont {
    padding-right: 1%;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
 }
 
 .apresentacao__cont__tit {
-    font-size: 36px;
-    font-family: 'Montserrat Alternates', sans-serif;
+    font-size: 2.25rem;
+    font-family:  var(--fonte-primaria);
    text-align: left;
-    margin-right: 30px;
+    margin-right: 1.8em;
                 }
 
 
 .paragrafo {
-    margin-top: 15px;
-    margin-left: 2px;
-    font-size: 15px;
-    font-family: 'Krona One', sans-serif;
+    margin-top: 1rem;
+    margin-left: 0.125em;
+    font-size: 1rem;
+    font-family: var(--fonte-secundaria);
 }
-
-
-
-/* .home {
-    font-family: 'Monserrat Alternates', sans-serif;
-    font: size 24px;
-    font-weight: 600px;
-    color: #22D4FD;
-    padding: 2% 0 0 18%;
-    
-}
-
-.boutme {
-    font-family: 'Monserrat Alternates', sans-serif;
-    font: size 24px;
-    font-weight: 600px;
-    color: #22D4FD;
-    padding: 2% 2% 0 ;
-    text-decoration: none;
-} */
 
 
 .titdois { 
     margin-right: 20%;
-    margin-left: 1px;
+    margin-left: 0.0625rem;
     margin-top: 1px;
-    font-family: 'Krona One', sans-serif;
+    font-family: var(--fonte-secundaria);
     font-weight: 400;
-    font-size: 20px;
+    font-size: 1.25rem;
 }
 
 .botao {
@@ -126,26 +133,25 @@ span{
     align-items: center;
     justify-content: space-between;
     margin-top: 8%;
-    margin-left: 40px;
+    margin-left: 2.5em;
 
 }
 
 .botaocor {
     
     background-color: #02032c;
-    width: 250px;
+    width: 15rem;
     text-align: center;
-    gap: 16px;
+    gap: 1rem;
     text-indent:2%;
-    border-radius: 14px;
-    font-size: 28px;
+    border-radius: 0.87rem;
+    font-size: 1.75rem;
     text-decoration: none;
     padding: 10px 19px 10px;
-    font-family: 'Montserrat Alternates', sans-serif;
-    color:  #22D4FD;
-    margin-right: 80px;
-    margin-top: 20px;
-    box-shadow: 0 0 10px #F6F6F6
+    font-family: var(--fonte-primaria);
+    margin-right: 5rem;
+    margin-top: 1.25rem;
+    box-shadow: 0 0 10px var(--cor-secundaria);
     
 }
 
@@ -158,8 +164,9 @@ span{
 
 .imagem {
     border-radius: 20px;
-    box-shadow: 0 0 20px #45bad1 ;
+    box-shadow: 0 0 20px  #45bad1;
     margin-top: 0%;
+    
     
    
    
@@ -168,12 +175,11 @@ span{
 
 
 .rodape {
-    color: #F6F6F6;
+    color: var(--cor-secundaria);
     background-color: #030331;
     text-align: center;
-    padding: 5px;
-    font-size: 20px;
-    font-family: 'Montserrat Alternates', sans-serif;
-    font-weight: 400;
+    padding: 0.31rem;
+    font-size: 1.25rem;
+    font-family: var(--fonte-primaria);
 
 }
